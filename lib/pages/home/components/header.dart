@@ -1,5 +1,5 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_icons/flutter_icons.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:responsive_framework/responsive_value.dart';
 import 'package:responsive_framework/responsive_wrapper.dart';
@@ -157,7 +157,7 @@ class Header extends StatelessWidget {
                 Globals.scaffoldKey.currentState?.openEndDrawer();
               },
               child: const Icon(
-                FlutterIcons.menu_fea,
+                CupertinoIcons.add,
                 color: Colors.white,
                 size: 28.0,
               ),

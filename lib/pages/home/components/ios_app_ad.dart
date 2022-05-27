@@ -4,6 +4,7 @@ import 'package:responsive_framework/responsive_wrapper.dart';
 
 import '../../../utils/constants.dart';
 import '../../../utils/screen_helper.dart';
+import 'dart:js' as js;
 
 class IosAppAd extends StatelessWidget {
   const IosAppAd({Key? key}) : super(key: key);
@@ -57,7 +58,7 @@ class IosAppAd extends StatelessWidget {
                         height: 15.0,
                       ),
                       Text(
-                        "Many App \n Smart App",
+                        "Many App \nSmart App",
                         style: GoogleFonts.oswald(
                           color: Colors.white,
                           fontWeight: FontWeight.w900,
@@ -93,7 +94,10 @@ class IosAppAd extends StatelessWidget {
                                 horizontal: 28.0,
                               ),
                               child: TextButton(
-                                onPressed: () {},
+                                onPressed: () {
+                                  js.context.callMethod('open', ['https://github.com/hoangchungk53qx1?tab=repositories']);
+
+                                },
                                 child: const Center(
                                   child: Text(
                                     "EXPLORE MORE",

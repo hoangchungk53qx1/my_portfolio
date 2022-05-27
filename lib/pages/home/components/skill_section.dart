@@ -132,8 +132,7 @@ class SkillSection extends StatelessWidget {
                                   ],
                                 ),
                               ),
-                            )
-                            .toList(),
+                            ).toList(),
                       )
                     ],
                   ),

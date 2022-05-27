@@ -8,6 +8,7 @@ import '../../../models/header_item.dart';
 import '../../../utils/constants.dart';
 import '../../../utils/globals.dart';
 import '../../../utils/screen_helper.dart';
+import 'dart:js' as js;
 
 List<HeaderItem> headerItems = [
   HeaderItem(
@@ -23,7 +24,9 @@ List<HeaderItem> headerItems = [
   HeaderItem(title: "BLOGS", onTap: () {}),
   HeaderItem(
     title: "HIRE ME",
-    onTap: () {},
+    onTap: () {
+      js.context.callMethod('open', ['https://www.facebook.com/hoangchungk53/']);
+    },
     isButton: true,
   ),
 ];

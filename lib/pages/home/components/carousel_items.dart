@@ -3,7 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 
 import '../../../models/carousel_item_model.dart';
 import '../../../utils/constants.dart';
-
+import 'dart:js' as js;
 
 List<CarouselItemModel> carouselItems = List.generate(
   5,
@@ -88,7 +88,9 @@ List<CarouselItemModel> carouselItems = List.generate(
               horizontal: 28.0,
             ),
             child: TextButton(
-              onPressed: () {},
+              onPressed: () {
+                js.context.callMethod('open', ['https://github.com/hoangchungk53qx1?tab=repositories']);
+              },
               child: const Text(
                 "GET STARTED",
                 style: TextStyle(

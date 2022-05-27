@@ -4,6 +4,7 @@ import 'package:responsive_framework/responsive_wrapper.dart';
 
 import '../../../utils/constants.dart';
 import '../../../utils/screen_helper.dart';
+import 'dart:js' as js;
 
 class WebsiteAd extends StatelessWidget {
   const WebsiteAd({Key? key}) : super(key: key);
@@ -86,7 +87,9 @@ class WebsiteAd extends StatelessWidget {
                                 horizontal: 28.0,
                               ),
                               child: TextButton(
-                                onPressed: () {},
+                                onPressed: () {
+                                  js.context.callMethod('open', ['https://github.com/hoangchungk53qx1?tab=repositories']);
+                                },
                                 child: const Center(
                                   child: Text(
                                     "EXPLORE MORE",

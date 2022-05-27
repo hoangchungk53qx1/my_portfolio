@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_portpolio/pages/home/components/experience_section.dart';
 
 import '../../utils/constants.dart';
 import '../../utils/globals.dart';
@@ -98,15 +99,19 @@ class Home extends StatelessWidget {
             const SizedBox(
               height: 50.0,
             ),
+            const ExperienceSection(),
+            const SizedBox(
+              height: 50.0,
+            ),
             const SkillSection(),
             const SizedBox(
               height: 50.0,
             ),
-            const Sponsors(),
+            // const Sponsors(),
             const SizedBox(
               height: 50.0,
             ),
-            const TestimonialWidget(),
+            // const TestimonialWidget(),
             const Footer(),
           ],
         ),

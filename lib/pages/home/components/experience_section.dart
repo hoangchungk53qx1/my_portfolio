@@ -1,29 +1,34 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:my_portpolio/models/experience.dart';
 import 'package:responsive_framework/responsive_wrapper.dart';
 
-import '../../../models/education.dart';
 import '../../../utils/constants.dart';
 import '../../../utils/screen_helper.dart';
 
-final List<Education> educationList = [
-  Education(
+final List<Experience> educationList = [
+  Experience(
     description:
-    "This is a sample education and details about it is stated below. This is a sample education and details about it is stated below",
-    linkName: "THPT Quảng Xương 1",
-    period: "2014 - 2016",
+        "Intern Java core 6 months,Maintain a modules License,Update technologies regularly.",
+    linkName: "BHSoft",
+    period: "Now 2019 - April 2020",
   ),
-  Education(
+  Experience(
     description:
-        "majoring in information technology at the Post and Telecommunications Institute of Technology ....",
-    linkName: "Post and Telecommunications Institute of Technology",
-    period: "2016 - 2021",
+        "Moblie developer Android and maintain iOS apps,Code a few small and medium project,Maintain, fix bugs, migrate and update old apps.",
+    linkName: "Bkav Corporation",
+    period: "May 2020 - July 2021",
   ),
-
+  Experience(
+    description:
+        "Moblie developer Android and maintain iOS apps,Code a few small and medium project,Maintain, fix bugs, migrate and update old apps.",
+    linkName: "VietIS Software Corporation",
+    period: "Aug 2021 - Now",
+  ),
 ];
 
-class EducationSection extends StatelessWidget {
-  const EducationSection({Key? key}) : super(key: key);
+class ExperienceSection extends StatelessWidget {
+  const ExperienceSection({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -45,7 +50,7 @@ class EducationSection extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             Text(
-              "EDUCATION",
+              "EXPERIENCE",
               style: GoogleFonts.oswald(
                 color: Colors.white,
                 fontWeight: FontWeight.w900,

@@ -10,12 +10,10 @@ class IosAppAd extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: ScreenHelper(
-        desktop: _buildUi(kDesktopMaxWidth),
-        tablet: _buildUi(kTabletMaxWidth),
-        mobile: _buildUi(getMobileMaxWidth(context)),
-      ),
+    return ScreenHelper(
+      desktop: _buildUi(kDesktopMaxWidth),
+      tablet: _buildUi(kTabletMaxWidth),
+      mobile: _buildUi(getMobileMaxWidth(context)),
     );
   }
 
@@ -48,7 +46,7 @@ class IosAppAd extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        "IOS APP",
+                        "Android and iOS APP",
                         style: GoogleFonts.oswald(
                           color: kPrimaryColor,
                           fontWeight: FontWeight.w900,
@@ -59,7 +57,7 @@ class IosAppAd extends StatelessWidget {
                         height: 15.0,
                       ),
                       Text(
-                        "UNIVERSAL\nSMART HOME APP",
+                        "Many App \n Smart App",
                         style: GoogleFonts.oswald(
                           color: Colors.white,
                           fontWeight: FontWeight.w900,
@@ -71,7 +69,7 @@ class IosAppAd extends StatelessWidget {
                         height: 10.0,
                       ),
                       const Text(
-                        "This is a random text about the project, I should have used the regular lorem ipsum text, but I am too lazy to search for that. This should be long enough",
+                        "I have done many projects related to android and ios about smart home, digital signature, photo application ",
                         style: TextStyle(
                           color: kCaptionColor,
                           height: 1.5,

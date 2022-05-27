@@ -1,3 +1,3 @@
 # my_portpolio
 
-![Screen Shot 2022-05-27 at 14 43 40](https://user-images.githubusercontent.com/52132635/170653800-41816790-a13e-4470-bc3f-2db6480d0305.png)
+![Screen Shot 2022-05-27 at 15 06 22](https://user-images.githubusercontent.com/52132635/170658493-a157972b-a8a4-4efa-831d-d87fc3dd04b6.png)

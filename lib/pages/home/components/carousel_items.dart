@@ -89,7 +89,7 @@ List<CarouselItemModel> carouselItems = List.generate(
             ),
             child: TextButton(
               onPressed: () {
-                js.context.callMethod('open', ['https://github.com/hoangchungk53qx1?tab=repositories']);
+                js.context.callMethod('open', ['https://profile-summary-for-github.com/user/hoangchungk53qx1']);
               },
               child: const Text(
                 "GET STARTED",

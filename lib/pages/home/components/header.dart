@@ -1,3 +1,5 @@
+import 'dart:js' as js;
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -8,24 +10,41 @@ import '../../../models/header_item.dart';
 import '../../../utils/constants.dart';
 import '../../../utils/globals.dart';
 import '../../../utils/screen_helper.dart';
-import 'dart:js' as js;
 
 List<HeaderItem> headerItems = [
   HeaderItem(
     title: "HOME",
     onTap: () {},
   ),
-  HeaderItem(title: "MY INTRO", onTap: () {
-
-  }),
-  HeaderItem(title: "SERVICES", onTap: () {}),
-  HeaderItem(title: "PORTFOLIO", onTap: () {}),
-  HeaderItem(title: "TESTIMONIALS", onTap: () {}),
-  HeaderItem(title: "BLOGS", onTap: () {}),
+  HeaderItem(
+      title: "MY INTRO",
+      onTap: () {
+        js.context.callMethod('open',
+            ['https://profile-summary-for-github.com/user/hoangchungk53qx1']);
+      }),
+  HeaderItem(
+      title: "SERVICES",
+      onTap: () {
+        js.context.callMethod('open',
+            ['https://profile-summary-for-github.com/user/hoangchungk53qx1']);
+      }),
+  HeaderItem(
+      title: "PORTFOLIO",
+      onTap: () {
+        js.context.callMethod('open',
+            ['https://profile-summary-for-github.com/user/hoangchungk53qx1']);
+      }),
+  HeaderItem(
+      title: "BLOGS",
+      onTap: () {
+        js.context.callMethod('open',
+            ['https://profile-summary-for-github.com/user/hoangchungk53qx1']);
+      }),
   HeaderItem(
     title: "HIRE ME",
     onTap: () {
-      js.context.callMethod('open', ['https://www.facebook.com/hoangchungk53/']);
+      js.context
+          .callMethod('open', ['https://www.facebook.com/hoangchungk53/']);
     },
     isButton: true,
   ),
@@ -81,46 +100,46 @@ class HeaderRow extends StatelessWidget {
         children: headerItems
             .map(
               (item) => item.isButton
-                  ? MouseRegion(
-                      cursor: SystemMouseCursors.click,
-                      child: Container(
-                        decoration: BoxDecoration(
-                          color: kDangerColor,
-                          borderRadius: BorderRadius.circular(8.0),
-                        ),
-                        padding: const EdgeInsets.symmetric(
-                            horizontal: 20.0, vertical: 5.0),
-                        child: TextButton(
-                          onPressed: item.onTap,
-                          child: Text(
-                            item.title,
-                            style: const TextStyle(
-                              color: Colors.white,
-                              fontSize: 13.0,
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                        ),
-                      ),
-                    )
-                  : MouseRegion(
-                      cursor: SystemMouseCursors.click,
-                      child: Container(
-                        margin: const EdgeInsets.only(right: 30.0),
-                        child: GestureDetector(
-                          onTap: item.onTap,
-                          child: Text(
-                            item.title,
-                            style: const TextStyle(
-                              color: Colors.white,
-                              fontSize: 13.0,
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                        ),
-                      ),
-                    ),
-            )
+              ? MouseRegion(
+            cursor: SystemMouseCursors.click,
+            child: Container(
+              decoration: BoxDecoration(
+                color: kDangerColor,
+                borderRadius: BorderRadius.circular(8.0),
+              ),
+              padding: const EdgeInsets.symmetric(
+                  horizontal: 20.0, vertical: 5.0),
+              child: TextButton(
+                onPressed: item.onTap,
+                child: Text(
+                  item.title,
+                  style: const TextStyle(
+                    color: Colors.white,
+                    fontSize: 13.0,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+            ),
+          )
+              : MouseRegion(
+            cursor: SystemMouseCursors.click,
+            child: Container(
+              margin: const EdgeInsets.only(right: 30.0),
+              child: GestureDetector(
+                onTap: item.onTap,
+                child: Text(
+                  item.title,
+                  style: const TextStyle(
+                    color: Colors.white,
+                    fontSize: 13.0,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+            ),
+          ),
+        )
             .toList(),
       ),
     );

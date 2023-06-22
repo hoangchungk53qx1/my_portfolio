@@ -30,7 +30,7 @@ dependencies:
   flutter:
     sdk: flutter
   google_fonts: ^3.0.1
-  responsive_framework: ^0.2.0
+  responsive_framework: ^1.0.0
   smooth_page_indicator: ^1.0.0+2
   carousel_slider: ^4.1.1
 

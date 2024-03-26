@@ -16,20 +16,15 @@ final List<FooterItem> footerItems = [
   FooterItem(
     iconPath: "assets/phone.png",
     title: "PHONE",
-    text1: "+0989112136",
-    text2: "+84584804310",
   ),
   FooterItem(
     iconPath: "assets/email.png",
     title: "EMAIL",
-    text1: "hoangchungk53qx1@gmail.com",
-    text2: "info@.com",
   ),
   FooterItem(
     iconPath: "assets/whatsapp.png",
     title: "Facbook",
     text1: "Hoàng Anh Chung",
-    text2: "Zalo : 0989112136",
   )
 ];
 
